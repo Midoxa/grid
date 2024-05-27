@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.col {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+  backdrop-filter: blur 30px;
+}
+
+body {
+  height: 100vh;
+  background: url(xx.png) center/cover no-repeat;
+}
+.grid-container {
+  height: fit-content;
+  width: 70%;
+  margin: 6rem auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  column-gap: 24px;
+}
+.col-3 {
+  background-color: #dd3b2c;
+}
+.col {
+  border-radius: 15px;
+}
+
+.col-1 p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #02896b;
+
+  border-bottom: 1px solid #00700642;
+
+  padding: 14px 14px;
+}
+.col-1 p:last-child {
+  border: none;
+}
+.col-2 p {
+  font-size: 16px;
+  font-weight: 550;
+  color: #02896b;
+  border-bottom: 1px solid #00700642;
+  padding: 14px 14px;
+  text-align: center;
+}
+
+.col-2 p:last-child {
+  border: none;
+}
+.col-3 p {
+  font-size: 16px;
+  font-weight: 550;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff42;
+  padding: 14px 14px;
+  text-align: center;
+}
+.col-3 p:last-child {
+  border: none;
+}
+.col-4 p:last-child {
+  border: none;
+}
+.col-4 p {
+  font-size: 16px;
+  font-weight: 550;
+  color: #02896b;
+  border-bottom: 1px solid #00700642;
+  padding: 14px 14px;
+  text-align: center;
+}
+.col-4 p:last-child {
+  border: none;
+}
+
+/* Type */
+.col-2 {
+  position: relative;
+}
+.col-2::before {
+  position: absolute;
+  content: "Free";
+  background-color: #69b0a0;
+  width: 150px;
+  height: 45px;
+  border-radius: 20px 20px 0 0;
+  display: grid;
+  place-items: center;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.col-3 {
+  position: relative;
+}
+.col-3::before {
+  position: absolute;
+  content: "Plus";
+  background-color: #69b0a0;
+  width: 150px;
+  height: 45px;
+  border-radius: 20px 20px 0 0;
+  display: grid;
+  place-items: center;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.col-4 {
+  position: relative;
+}
+.col-4::before {
+  position: absolute;
+  content: "Pro";
+  background-color: #69b0a0;
+  width: 150px;
+  height: 45px;
+  border-radius: 20px 20px 0 0;
+  display: grid;
+  place-items: center;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 18px;
+  font-weight: 600;
+}
